@@ -5,7 +5,7 @@
 ### Accelerometer raw readings are saved in the .txt format so that it can be processed or cross-verified on the computer later, acting as a data logger.<br>
 ### The raw data is filtered by a low-pass(LP) filter ```alpha*x[i] + (1-alpha)*y[i-1] ```.<br>
 ### LP filtered data passes via moving average filtered data 5 times with a window size of 5 to obtain a smooth graph.<br>
-Then the data is normalized with ```( x[i] - mean)/(max(x) -
+### Then the data is normalized with ```( x[i] - mean)/(max(x) -
  min(x) )```.<br>
 ### Points of local maxima are recorded, and then points with  a value less than a threshold value is discarded for each leg data set, thus giving us gait cycle points.<br>
 ### Average Gait Cycle(AGC) is calculated for each leg separately, that is the gait cycle template which has the closest resemblance to other gait cycles using dynamic time wrapping(dwt).<br>
