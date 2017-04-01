@@ -1,7 +1,7 @@
 # Accelero2
-##This app compares average gait cycle of both legs and represents it on a scale from 0 to MAX_VALUE.
->Smartphone embedded accelerometer is used to take readings voluntary by the user in the app.
->Smartphone is kept in the front pocket of jeans with fixed orientation such that +Y axis and +Z axis faces top and front/forward direction respectively and Z-axis reading is processed.
+##This app compares average gait cycle of both legs and represents it on a scale from 0 to MAX_VALUE.<br>
+>Smartphone embedded accelerometer is used to take readings voluntary by the user in the app.<br>
+>Smartphone is kept in the front pocket of jeans with fixed orientation such that +Y axis and +Z axis faces top and front/forward direction respectively and Z-axis reading is processed.<br>
 >Accelerometer raw readings are saved in the .txt format so that it can be processed or cross-verified on the computer later, acting as a data logger.
 >The raw data is filtered by a low-pass(LP) filter ```alpha*x[i] + (1-alpha)*y[i-1] ```
 >LP filtered data passes via moving average filtered data 5 times with a window size of 5 to obtain a smooth graph.
