@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     String entry;
     long startTime,endTime;
     EditText edittext,edittext2,edittext3;
+    Switch storageInternal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         edittext=(EditText)findViewById(R.id.editText);
         edittext2=(EditText)findViewById(R.id.editText2);
         edittext3=(EditText)findViewById(R.id.editText3);
+        storageInternal=(Switch)findViewById(R.id.switch1);
 
         senseManage=(SensorManager)getSystemService(Context.SENSOR_SERVICE);
         senseAccelero=senseManage.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
@@ -59,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         position="left";
         endTime=System.currentTimeMillis();
         senseManage.unregisterListener(this);
-        fileHandler.write("myleft.txt",entry);
+        fileHandler.write("myleft.txt",entry,storageInternal.isChecked(),getApplicationContext());
         textview5.setText("SAVED LEFT ");
         Toast.makeText(getApplicationContext(), "stopLeft", Toast.LENGTH_SHORT).show();
 
@@ -77,19 +80,20 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         position="right";
         endTime=System.currentTimeMillis();
         senseManage.unregisterListener(this);
-        fileHandler.write("myright.txt",entry);
+        fileHandler.write("myright.txt",entry,storageInternal.isChecked(),getApplicationContext());
         textview5.setText("SAVED RIGHT");
         Toast.makeText(getApplicationContext(), "stopRight", Toast.LENGTH_SHORT).show();
 
     }
     public void compareButton(View v){
         textview5.setText("Calculating");
+        int xMMA;
         // read data from file
-        Vector<Float[]> vec= fileHandler.read("myleft.txt");
+        Vector<Float[]> vec= fileHandler.read("myleft.txt",storageInternal.isChecked(),getApplicationContext());
         Float[] XL,YL,ZL,TL;
         TL=vec.get(0);/*XL=vec.get(1);YL=vec.get(2);*/ZL=vec.get(1);
 
-        vec= fileHandler.read("myright.txt");
+        vec= fileHandler.read("myright.txt",storageInternal.isChecked(),getApplicationContext());
         Float[] XR,YR,ZR,TR;
         TR=vec.get(0);/*XR=vec.get(1);YR=vec.get(2);*/ZR=vec.get(1);
 
@@ -106,6 +110,12 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         catch(Exception e){
             thresholdK=10f;
         }
+        try{
+            xMMA=Integer.valueOf(edittext3.getText().toString());
+
+        }catch(Exception e){
+            xMMA=5;
+        }
 
         Filters filter = new Filters();
       /*YR=filter.movingAverage(YR,windowSize);
@@ -113,12 +123,12 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         XR=filter.movingAverage(XR,windowSize);
         XL=filter.movingAverage(XL,windowSize);*/
         ZL=filter.lowpass(ZL,0.5f);
-        for(int i=0;i<5;i++)
+        for(int i=0;i<xMMA;i++)
             ZL=filter.movingAverage(ZL,windowSize);
         filter.normalize(ZL);
 
         ZR=filter.lowpass(ZR,0.5f);
-        for(int i=0;i<5;i++)
+        for(int i=0;i<xMMA;i++)
             ZR=filter.movingAverage(ZR,windowSize);
         filter.normalize(ZR);
 
