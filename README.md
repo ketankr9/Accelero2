@@ -7,5 +7,5 @@
 ### LP filtered data passes via moving average filtered data x(default 5) times with a window size of x(default 5) to obtain a smooth graph.<br>
 ### Then the data is normalized.<br>
 ### Points of local maxima are recorded, and then points with a value less than a threshold value is discarded for each leg data set, thus giving us gait cycle points.<br>
-### Average Gait Cycle(AGC) is calculated for each leg separately, that is the gait cycle template which has the closest resemblance to other gait cycles using dynamic time wrapping(dwt).<br>
-### Average Gait Cycle Template calculated in previous step for each leg is compared using dynamic time wrapping(DWT), the value obtained is reported.<br>
+### Average Gait Cycle(AGC) is calculated for each leg separately, that is the gait cycle template which has the closest resemblance to other gait cycles using dynamic time wrapping(dtw).<br>
+### Average Gait Cycle Template calculated in previous step for each leg is compared using dynamic time wrapping(DTW), the value obtained is reported.<br>
