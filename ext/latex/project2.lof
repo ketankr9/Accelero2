@@ -1,0 +1,13 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The first, second, third and fourth columns of the data log files are time, X-axis, Y-axis and Z-axis respectively.}}{5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Raw X, Y, Z axis readings, from top to bottom. }}{6}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Raw z-axis(red) readings vs low-pass filtered(black) data.}}{8}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Moving Average applied on low-pass filtered data.}}{8}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Normalization done on moving averaged data.}}{9}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Human Gait Cycle.}}{10}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces AGC of left leg(in black).}}{11}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces AGC of right leg(in black).}}{11}
+\addvspace {10\p@ }

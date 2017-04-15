@@ -1,0 +1,88 @@
+
+
+\documentclass[a4paper]{report}
+
+
+
+
+\title{Indian Institute of Technology (BHU) Varanasi\\
+Department of Computer Science}
+\author{Utsav Krishnan}
+\date\today
+
+\begin{document}
+
+\maketitle
+
+This is my \emph{first} document prepared in \LaTeX
+The numbers 1, 2, 3, etc.\ are called natural numbers. According to Kronecker\cite{a1}, they were made\\[5pt]
+by God; all \lq else\rq being \lq\lq the\rq\rq work of Man.
+\footnote{footnote}
+\footnote{footnote}
+\footnote{footnote}
+\newpage
+\begin{center}
+\textbf{\huge Certificate}\\[50pt]
+\end{center}
+
+This is to certify that Mr. Utsav Krishnan has undergone a course at this institute and is qualified to be a technician.
+\\[20pt]
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Utsav Krishnan \\% Your name
+\textsc{Part-II, IDD}
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.55\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+Dr. Hari Prabhat\\
+\textsc{Gupta} % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[0cm]
+
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\chapter{Noise removal}
+\section{Section}
+ssection
+\subsection{subsection}
+ssubsection
+\paragraph{Paragraph}
+pparagraph
+
+The average of window size of data points are taken as average and the value is set to the median element. 
+\begin{quote}The weight given to every points in the window size over summation is the same.
+\end{quote}The quote has ended now.
+$$X_\frac{m+n}{2} = \frac{X_m + X_{m+1}+ \cdots + X_n}{n-m+1}
+      = \frac{1}{n-m+1}\sum_{i=m}^{n} X_i$$
+Data is then normalized to reduce the distance between the maximum and minimum of 
+gait cycle points while preserving the characteristics of the graph.\newline
+
+\begin{description}
+	\item[AGC] Average gait cycle is the gait cycle which has maximum resemblance to other gait cycles.
+	\begin{description}
+		\item This syntax is used for definition.
+	\end{description}
+\end{description}
+
+\begin{verbatim}
+   for i from 1 to n
+       y[i] := y[i-1] + \alpha * (x[i] - y[i-1])
+\end{verbatim}
+% bibliography
+\begin{thebibliography}{20}
+\bibitem{a1}jkvbkjdbvkj
+\bibitem{a2}nvdvldknvlskdnvs
+\end{thebibliography}
+
+
+\end{document}
