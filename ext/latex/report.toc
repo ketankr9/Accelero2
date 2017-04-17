@@ -1,0 +1,20 @@
+\select@language {english}
+\contentsline {chapter}{List of Figures}{vii}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Overview}{1}
+\contentsline {section}{\numberline {1.2}Motivation of the Research Work}{2}
+\contentsline {section}{\numberline {1.3}Organisation of the Report}{3}
+\contentsline {chapter}{\numberline {2}Data Acquision and Storage}{4}
+\contentsline {section}{\numberline {2.1}Data acquisition}{4}
+\contentsline {section}{\numberline {2.2}Storage}{4}
+\contentsline {chapter}{\numberline {3}Noise reduction and smoothing}{6}
+\contentsline {section}{\numberline {3.1}Noise removal}{6}
+\contentsline {section}{\numberline {3.2}Smoothing}{6}
+\contentsline {section}{\numberline {3.3}Normalization}{7}
+\contentsline {chapter}{\numberline {4}Feature Extraction}{9}
+\contentsline {section}{\numberline {4.1}Maximal Points}{9}
+\contentsline {section}{\numberline {4.2}Gait Cycle Points}{9}
+\contentsline {subsection}{\numberline {4.2.1}Average Gait Cycle}{9}
+\contentsline {section}{\numberline {4.3}Dynamic Time Wrapping}{11}
+\contentsline {chapter}{\numberline {5}Conclusion \& Discussion}{12}
+\contentsline {chapter}{Bibliography}{13}

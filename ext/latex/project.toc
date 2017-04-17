@@ -1,4 +1,0 @@
-\contentsline {chapter}{\numberline {1}Noise removal}{6}
-\contentsline {section}{\numberline {1.1}Section}{6}
-\contentsline {subsection}{\numberline {1.1.1}subsection}{6}
-\contentsline {paragraph}{Paragraph}{6}

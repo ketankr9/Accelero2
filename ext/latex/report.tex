@@ -1,0 +1,83 @@
+\documentclass[12pt]{csethesis}
+
+\usepackage[english]{babel}
+\usepackage{amsmath}        % Extra math definitions
+\usepackage{graphics}       % PostScript figures
+\usepackage{setspace}       % 1.5 spacing
+\usepackage{multicol}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{lscape}
+\usepackage{color}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{longtable}
+\newtheorem{lemma}{Lemma}[chapter]
+\makeatletter
+\@addtoreset{lemma}{chapter}
+\makeatother
+\newtheorem{theorem}{Theorem}[chapter]
+\makeatletter
+\@addtoreset{theorem}{chapter}
+\makeatother
+
+\usepackage[left=1.5in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage{fancyhdr}
+\fancyhead[RO,LE]{}
+\fancyhead[RE]{\ifnum\value{chapter}>0 \bfseries{\nouppercase{\rightorleftmark}} \else \bfseries{\leftmark} \fi}
+\fancyhead[LO]{\ifnum\value{chapter}>0 \bfseries{\nouppercase{\rightorleftmark}}  \else \bfseries{\leftmark} \fi}
+\makeatletter
+\newcommand{\rightorleftmark}{%
+  \begingroup\protected@edef\x{\rightmark}%
+  \ifx\x\@empty
+    \endgroup\slshape\nouppercase{\leftmark}
+  \else
+    \endgroup\rightmark
+  \fi}
+\makeatother
+
+\newtheorem{example}{Example}
+\phdtitle = {[Title of the project]}
+\name = {[Name of the student]}
+\rollno = {[Roll Number]}
+\guide = {[Name of Supervisor]}
+
+\begin{document}
+\pagenumbering{roman}
+\include{others/titleMe}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+%\onehalfspacing
+\doublespacing
+\include{others/dedication}
+\include{others/declaration}
+\include{others/certificate}
+\include{others/acknowledgment}
+\include{others/abstract}
+
+\pagestyle{fancy}
+\tableofcontents
+\clearpage
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+%\newpage
+\thispagestyle{empty}
+\mbox{}
+%\clearpage
+%\addcontentsline{toc}{chapter}{\listtablename}
+%\listoftables
+%\addcontentsline{toc}{chapter}{List of Symbols}
+\include{others/notations}
+\pagenumbering{arabic}
+\def\headrulehook{\color{black}}      
+
+\include{chapters/ch1}
+\include{chapters/ch2}
+\include{chapters/ch3}
+\include{chapters/ch4}
+\include{chapters/ch5}
+
+\bibliographystyle{IEEEtran}
+\bibliography{report}
+\end{document}

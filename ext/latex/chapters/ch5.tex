@@ -1,0 +1,13 @@
+\chapter{Conclusion \& Discussion}\label{final}
+
+
+This project illustrates that applying moving average with small window size multiple times can be a good way to smooth a time series accelerometer data instead of applying moving average with large window size once, while preserving the characteristics of the gait cycle.
+
+The similarity score between two average gait cycle template is reported as a whole number, a smaller value means greater resemblance.
+
+\section*{Further Scope}
+\begin{itemize}
+\item The gyroscope reading can be used to get the orientation of the smartphone and thus the rotation matrix. Hence the subject no longer has to keep the smartphone in fixed orientation in the trouser’s pocket.
+\item Post processing time can be reduced by at least half, by using multi-threading technique. As until extracting average gait cycle both leg’s data are processed independently.
+\item Although for low-pass filter we have used the value of alpha as 0.5 it can be calculated from the data set dynamically.
+\end{itemize}
