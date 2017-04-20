@@ -1,5 +1,5 @@
 \select@language {english}
-\contentsline {chapter}{List of Figures}{vii}
+\contentsline {chapter}{List of Figures}{x}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Overview}{1}
 \contentsline {section}{\numberline {1.2}Motivation of the Research Work}{2}

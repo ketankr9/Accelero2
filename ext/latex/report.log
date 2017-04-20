@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.10)  18 APR 2017 01:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.10)  20 APR 2017 21:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -452,49 +452,63 @@ Package pdftex.def Info: pictures/logo.jpeg used on input line 34.
 ]
 \openout2 = `others/dedication.aux'.
 
-
-No file others/dedication.tex.
-\openout2 = `others/declaration.aux'.
-
-No file others/declaration.tex.
-\openout2 = `others/certificate.aux'.
-
-(./others/certificate.tex
-Overfull \hbox (102.52957pt too wide) in paragraph at lines 15--21
- [][] 
- []
-
-) [3
-
-
-
-
+ (./others/dedication.tex) [3
 
 
 ]
-\openout2 = `others/acknowledgment.aux'.
+\openout2 = `others/declaration.aux'.
 
-
-No file others/acknowledgment.tex.
-\openout2 = `others/abstract.aux'.
-
-(./others/abstract.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--9
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--9
-
+ (./others/declaration.tex
+Overfull \hbox (102.52957pt too wide) in paragraph at lines 18--25
+ [][] 
  []
 
 ) [4
 
 
 
+]
+\openout2 = `others/certificate.aux'.
+
+ (./others/certificate.tex
+Overfull \hbox (102.52957pt too wide) in paragraph at lines 15--21
+ [][] 
+ []
+
+) [5
 
 
-] (./report.toc [5
+
+]
+\openout2 = `others/acknowledgment.aux'.
+
+ (./others/acknowledgment.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+) [6
+
+
+
+]
+\openout2 = `others/abstract.aux'.
+
+ (./others/abstract.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--9
+
+ []
+
+) [7
+
+
+
+] (./report.toc [8
 
 
 ])
@@ -508,11 +522,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6] (./report.lof)
+[9] (./report.lof)
 \tf@lof=\write4
 \openout4 = `report.lof'.
 
- [7
+ [10
 
 
 ]
@@ -584,7 +598,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-<pictures/recordedCrop.png, id=41, 462.72874pt x 151.56625pt>
+<pictures/recordedCrop.png, id=51, 462.72874pt x 151.56625pt>
 File: pictures/recordedCrop.png Graphic file (type png)
 
 <use pictures/recordedCrop.png>
@@ -612,7 +626,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-<pictures/XYZcrop.png, id=45, 1110.1475pt x 676.5275pt>
+<pictures/XYZcrop.png, id=55, 1110.1475pt x 676.5275pt>
 File: pictures/XYZcrop.png Graphic file (type png)
 
 <use pictures/XYZcrop.png>
@@ -623,7 +637,7 @@ Package pdftex.def Info: pictures/XYZcrop.png used on input line 25.
 
  (./chapters/ch3.tex
 Chapter 3.
-<pictures/LOWPASSfiltereddata.png, id=51, 1233.6489pt x 641.0349pt>
+<pictures/LOWPASSfiltereddata.png, id=61, 1233.6489pt x 641.0349pt>
 File: pictures/LOWPASSfiltereddata.png Graphic file (type png)
 
 <use pictures/LOWPASSfiltereddata.png>
@@ -649,7 +663,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-<pictures/maax3.png, id=58, 1233.6489pt x 641.0349pt>
+<pictures/maax3.png, id=67, 1233.6489pt x 641.0349pt>
 File: pictures/maax3.png Graphic file (type png)
  <use pictures/maax3.png>
 Package pdftex.def Info: pictures/maax3.png used on input line 30.
@@ -659,7 +673,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
  []
 
-<pictures/normalized.png, id=59, 578.16pt x 433.62pt>
+<pictures/normalized.png, id=68, 578.16pt x 433.62pt>
 File: pictures/normalized.png Graphic file (type png)
 
 <use pictures/normalized.png>
@@ -677,7 +691,7 @@ Missing character: There is no ¦ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ¦ in font cmr12!
-<pictures/gaitcycle.png, id=75, 1005.7575pt x 292.09125pt>
+<pictures/gaitcycle.png, id=84, 1005.7575pt x 292.09125pt>
 File: pictures/gaitcycle.png Graphic file (type png)
 
 <use pictures/gaitcycle.png>
@@ -697,14 +711,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
 
 
-] <pictures/agc_left_crop.png, id=79, 849.1725pt x 237.88875pt>
+] <pictures/agc_left_crop.png, id=89, 849.1725pt x 237.88875pt>
 File: pictures/agc_left_crop.png Graphic file (type png)
 
 <use pictures/agc_left_crop.png>
 Package pdftex.def Info: pictures/agc_left_crop.png used on input line 31.
 (pdftex.def)             Requested size: 339.66298pt x 95.15381pt.
 
-<pictures/agc_right_crop.png, id=80, 848.16875pt x 205.76875pt>
+<pictures/agc_right_crop.png, id=90, 848.16875pt x 205.76875pt>
 File: pictures/agc_right_crop.png Graphic file (type png)
 
 <use pictures/agc_right_crop.png>
@@ -760,11 +774,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4086 strings out of 494953
- 54718 string characters out of 6180977
- 132152 words of memory out of 5000000
- 7191 multiletter control sequences out of 15000+600000
- 17182 words of font info for 64 fonts, out of 8000000 for 9000
+ 4094 strings out of 494953
+ 54891 string characters out of 6180977
+ 132162 words of memory out of 5000000
+ 7193 multiletter control sequences out of 15000+600000
+ 17541 words of font info for 65 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  38i,11n,43p,458b,268s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
@@ -781,10 +795,10 @@ cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (20 pages, 1141957 bytes).
+Output written on report.pdf (23 pages, 1144709 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 151 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
